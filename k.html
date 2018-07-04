@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Select a cartoons from the list</p>
+	<select id="mySelect" onchange="myfunction()">
+		<option value="Tom and jerry">tom and jerry 
+			<option value="Motu patlu">Motu patlu
+				<option value="Micky mouse">micky mouse
+					<p id="demo"></p>
+	</select>
+<script type="text/javascript">
+	function myfunction(){
+		var x= document.getElementById("mySelect").value;
+		  document.getElementById("demo").innerHTML = "You selected: " + x;
+	}
+</script>
+</body>
+</html>
